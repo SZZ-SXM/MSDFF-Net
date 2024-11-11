@@ -1,0 +1,28 @@
+Collections:
+  - Name: MSDFF-Net
+    Metadata:
+      Training Data:
+        - R-SSDD
+        - R-HRSID
+        - CEMEE
+      Training Techniques:
+        - AdamW
+        - Flat Cosine Annealing
+      Training Resources: 1x RTX3090 GPUs
+      Architecture:
+        - MSLK-Net
+        - DFF-Net
+    README: configs/msdff-net/README.md
+
+Models:
+  - Name: MSDFF-Net_s-3x-dota
+    In Collection: MSDFF-Net
+    Config: configs/msdff-net/msdff-net_s-3x-dota_ms_ssdd.py
+    Metadata:
+      Training Data: R-SSDD
+    Results:
+      - Task: Arbitrary-Direction SAR Ship Detection
+        Dataset: R-SSDD
+        Metrics:
+          mAP: 91.55
+    Weights:
