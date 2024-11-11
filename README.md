@@ -12,3 +12,13 @@ Arbitrary-oriented ship detection in SAR imagery facilitates more precise and co
 <img src="https://github.com/SZZ-SXM/MSDFF-Net/blob/main/data/1.png">
 </div>
 
+## Overall Structure
+
+Our works are focused on the following three aspects: 
+1) To mitigate the impact of scale imbalance in feature extraction, a multi-scale large kernel convolution block was introduced into backbone structure, leading to our proposal of a new backbone framework named MSLK-Net. MSLK-Net can more effectively extract multi-scale ship target features and both local and global information from the complex scene.
+2) To enhance the model's perception ability in complex scenes and address the unbalanced utilization of spatial and channel features during the feature fusion process, the concept of a dynamic mechanism was combined to construct an adaptive feature fusion module based on global context information, termed DFF. Subsequently, the DFF module was integrated with MSLK-Block to establish a new feature pyramid structure named DFF-Net.
+3) Inspired by the elliptical characteristics of ship targets and the work of Zhou et al. [31], the transformation of the OBB representation into a Gaussian distribution was executed in the prediction head. For the loss calculation, we introduced improved Probabilistic IoU to compute the target regression loss. By measuring the GPD distance, this approach guides the network model's optimization, reducing the imbalance between regression and classification tasks during model learning.
+
+<div align=center>
+<img src="https://github.com/SZZ-SXM/MSDFF-Net/blob/main/data/Figure.3 Overall structure - final - 1.png">
+</div>
