@@ -1,6 +1,6 @@
 # MSDFF-Net
 
-> [Arbitrary-Direction SAR Ship Detection Method for Multi-Level Imbalanced Problems](Under reviewing)
+> [Arbitrary-Direction SAR Ship Detection Method for Multiscale Imbalance]
 
 <!-- [ALGORITHM] -->
 
@@ -57,10 +57,14 @@ Welcome to raise issues or email to sunzhongzhen14@163.com or sunzhongzhen14@nud
 ## Citation
 
 ```
-@misc{szz2024MSDFF-Net,
-      title={Arbitrary-Direction SAR Ship Detection Method for Multi-Level Imbalanced Problems},
-      author={Zhongzhen Sun, Xiangguang Leng, Member, IEEE, Xianghui Zhang, Zheng Zhou, Boli Xiong, Kefeng Ji, Member, IEEE, and Gangyao Kuang, Senior Member, IEEE},
-      year={2024},
-      primaryClass={under reviewing in TGRS}
-}
+@ARTICLE{10964367,
+  author={Sun, Zhongzhen and Leng, Xiangguang and Zhang, Xianghui and Zhou, Zheng and Xiong, Boli and Ji, Kefeng and Kuang, Gangyao},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Arbitrary-Direction SAR Ship Detection Method for Multiscale Imbalance}, 
+  year={2025},
+  volume={63},
+  number={},
+  pages={1-21},
+  keywords={Marine vehicles;Feature extraction;Radar polarimetry;Object detection;Convolution;Scattering;Data mining;Radar imaging;Training;Optical scattering;Arbitrary-oriented detection;large-kernel network;multiscale imbalance;synthetic aperture radar (SAR)},
+  doi={10.1109/TGRS.2025.3559701}}
 ```
